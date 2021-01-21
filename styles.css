@@ -1,0 +1,214 @@
+css
+body
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+ font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+  background: white;
+  font-weight: 400;
+
+}
+
+.msgcontainer{
+  width: 600px;
+  height: 280px;
+  position: absolute;
+  left: 5%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+.msgcontainer2{
+  width: 600px;
+  height: 280px;
+  position: absolute;
+  left: 65%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+h1{
+  color: #669DB3FF;
+
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav{
+  float:right;
+}
+/*färg ruta*/
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* list items */
+nav li{
+  display: inline-block;
+  margin-left: 75px;
+  padding-top: 25px;
+/* gör så att dne blir relativ till list item istället för window*/
+  position: relative;
+
+}
+/*style*/
+nav a {
+  color: #A89C94FF ;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #669DB3FF ;
+  /* aktiv klass*/
+}
+ul li.active a{
+  color: #669DB3FF;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 4px;
+  background-color:#669DB3FF;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 400ms;
+}
+
+nav a:hover::before {
+  width: 100%
+
+}*/
+
+/*försök till  text animation */
+*{
+  padding:0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+  .container2{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+  }
+.container2 span{
+  color: #669DB3FF;
+  text-transform: uppercase;
+  display:block;
+}
+.text1{
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 15px;
+  position:relative;
+  animation: text 2.5s 1;
+}
+
+.text2{
+  font-size: 70px;
+
+}
+@keyframes text {
+  0%{
+    color:#A89C94FF;
+    margin-bottom: -15px;
+}
+30%{
+  letter-spacing: 25px;
+  margin-bottom: -15px;
+}
+85%{
+  letter-spacing: 8px;
+  margin-bottom: -15%;
+}
+
+/* Tools */
+}
+.imgcontainer
+{
+  position: relative;
+  width: 1600px;
+  display:flex;
+  justify-content:space-between;
+  align-items:stretch;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+}
+.imgcontainer .card
+{
+/* jag är helt galen. Glöm inte bort att försöka skustera texterna
+så att kolumnenrnas texter blir alignade.
+detta under påvärkar lådorna */
+  position: relative;
+  max-width: 450px;
+  background: #ECECEC;
+  margin: 50px
+  padding: 15px;
+  display:flex;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  align-items: center;
+  -webkit-border-radius:10px;
+  -moz-radius: 10px;
+  border-radius: 10px;
+  /*boxshadow blir större när man hoverar övertoning
+  även en trantition när man uppnar sidan */
+  box-shadow: 0 5px 25px
+                  rgba(0,0,0, .25);
+ transition: all 350ms ease-in-out;
+
+}
+.imgcontainer .card:hover{
+  background-color:white;
+  transform: translate(0,-7px);
+  box-shadow: 0 10px 25px
+                  rgba(0,0,0, 0.40);
+}
+/*slutet försöket*/
+/* få sidan att skyssteras eftre hur stort fönster man har*/
+}
+.imgcontainer .card .imgBx
+{
+max-width: 150px
+flex: 0 0 150px;
+}
+
+}
+.imgcontainer .card .imgBx img
+{
+  max.width: 100%;
+}
+.imgcontainer .card .content
+{
+  margin-left: 20px;
+}
+@media (max-width: 991px)
+{
+.imgcontainer
+{
+flex-direction: column;
+}
+/* contact*/
